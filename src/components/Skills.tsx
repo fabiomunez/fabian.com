@@ -34,7 +34,7 @@ export const Skills = () => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex items-center justify-center mb-12">
           <div className="relative">
-            <h2 className="text-3xl font-bold text-center gradient-text flex items-center justify-center gap-2">
+            <h2 className="text-3xl font-bold text-center gradient-text text-3d flex items-center justify-center gap-2 perspective-element">
               <BrainCircuit className="w-8 h-8" />
               <span>Skills & Expertise</span>
             </h2>
@@ -46,7 +46,7 @@ export const Skills = () => {
           {skillCategories.map((category, index) => (
             <div 
               key={category.title} 
-              className="p-6 rounded-xl glass-effect hover-lift"
+              className="p-6 rounded-xl glass-effect hover-lift perspective-card"
               style={{ 
                 animationDelay: `${index * 0.1}s`
               }}

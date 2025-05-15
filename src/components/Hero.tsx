@@ -28,7 +28,7 @@ export const Hero = () => {
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 gradient-text">
+          <h1 className="text-6xl md:text-7xl font-bold mb-6 gradient-text text-3d perspective-element">
             Fabian Prosper
           </h1>
           
@@ -48,23 +48,23 @@ export const Hero = () => {
           
           <div className="mt-8 flex flex-col items-center space-y-6">
             <div className="flex justify-center space-x-4">
-              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300">
+              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300 perspective-card">
                 <GithubIcon size={24} className="text-white" />
               </a>
-              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300">
+              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300 perspective-card">
                 <LinkedinIcon size={24} className="text-white" />
               </a>
-              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300">
+              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300 perspective-card">
                 <MailIcon size={24} className="text-white" />
               </a>
-              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300">
+              <a href="#" className="p-3 hover-lift glass-effect rounded-xl transition-all duration-300 perspective-card">
                 <Code2Icon size={24} className="text-white" />
               </a>
             </div>
             
             <a 
               href="#works" 
-              className="px-8 py-3 rounded-full animated-border bg-black hover-lift"
+              className="px-8 py-3 rounded-full animated-border bg-black hover-lift perspective-button"
             >
               View My Work
             </a>

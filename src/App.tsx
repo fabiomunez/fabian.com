@@ -90,18 +90,49 @@ export function App() {
   }, []);
   
   return (
-    <div className="w-full min-h-screen bg-black text-white overflow-hidden relative">
+    <div className="w-full min-h-screen text-white overflow-hidden relative">
+      {/* Scanline effect for futuristic look */}
+      <div className="scanline" />
+      
       {/* Background decorative elements with parallax effect */}
-      <div className="fixed inset-0 z-0 opacity-30">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-purple-600 rounded-full filter blur-[100px] parallax-bg" />
+      <div className="fixed inset-0 z-0 opacity-40">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-cyan-600 rounded-full filter blur-[100px] parallax-bg" />
         <div className="absolute bottom-20 right-10 w-72 h-72 bg-blue-600 rounded-full filter blur-[100px] parallax-bg" style={{ animationDelay: '0.5s' }} />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-pink-600 rounded-full filter blur-[120px] parallax-bg pulse-effect" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-[25%] right-[15%] w-64 h-64 bg-indigo-600 rounded-full filter blur-[90px] parallax-bg" style={{ animationDelay: '1.5s' }} />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-indigo-600 rounded-full filter blur-[120px] parallax-bg pulse-effect" style={{ animationDelay: '1s' }} />
+        <div className="absolute top-[25%] right-[15%] w-64 h-64 bg-blue-600 rounded-full filter blur-[90px] parallax-bg" style={{ animationDelay: '1.5s' }} />
         <div className="absolute bottom-[15%] left-[20%] w-56 h-56 bg-cyan-600 rounded-full filter blur-[80px] parallax-bg" style={{ animationDelay: '2s' }} />
       </div>
       
-      {/* Animated grid pattern with subtle movement */}
-      <div className="fixed inset-0 z-0 opacity-10 bg-grid-pattern parallax-bg" />
+      {/* Cyber grid background with subtle movement */}
+      <div className="fixed inset-0 z-0 opacity-15 cyber-grid parallax-bg" />
+      
+      {/* Digital circuit lines */}
+      <div className="fixed inset-0 z-0 opacity-10">
+        <div className="absolute top-0 left-[10%] w-[1px] h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent" />
+        <div className="absolute top-0 left-[30%] w-[1px] h-full bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
+        <div className="absolute top-0 left-[70%] w-[1px] h-full bg-gradient-to-b from-transparent via-cyan-500 to-transparent" />
+        <div className="absolute top-0 left-[90%] w-[1px] h-full bg-gradient-to-b from-transparent via-blue-500 to-transparent" />
+        
+        <div className="absolute left-0 top-[15%] w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+        <div className="absolute left-0 top-[45%] w-full h-[1px] bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
+        <div className="absolute left-0 top-[75%] w-full h-[1px] bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+      </div>
+      
+      {/* Digital particles */}
+      <div className="fixed inset-0 z-0 opacity-30">
+        {Array.from({ length: 20 }).map((_, i) => (
+          <div 
+            key={i}
+            className="absolute w-1 h-1 bg-cyan-500 rounded-full" 
+            style={{
+              top: `${Math.random() * 100}%`,
+              left: `${Math.random() * 100}%`,
+              opacity: Math.random() * 0.5 + 0.3,
+              animation: `float ${Math.random() * 10 + 5}s ease-in-out ${Math.random() * 5}s infinite`
+            }}
+          />
+        ))}
+      </div>
       
       {/* Main content */}
       <div className="relative z-10">

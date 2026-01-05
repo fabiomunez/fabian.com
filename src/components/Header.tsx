@@ -38,7 +38,6 @@ export const Header = () => {
         "mobile",
         "graphic",
         "works",
-        "cv",
         "contact",
       ];
 
@@ -78,7 +77,6 @@ export const Header = () => {
       { id: "mobile", label: "Mobile", icon: <Smartphone size={16} /> },
       { id: "graphic", label: "Design", icon: <Palette size={16} /> },
       { id: "works", label: "Works", icon: <Briefcase size={16} /> },
-      { id: "cv", label: "CV", icon: <Briefcase size={16} /> },
       { id: "contact", label: "Contact", icon: <Mail size={16} /> },
     ],
     []

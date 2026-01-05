@@ -8,7 +8,6 @@ import { GraphicDesigner } from "./components/GraphicDesigner";
 import { Frontend } from "./components/Frontend";
 import { Backend } from "./components/Backend";
 import { Mobile } from "./components/Mobile";
-import { CV } from "./components/CV";
 
 export function App() {
   // Add 3D effect with mouse movement
@@ -181,7 +180,6 @@ export function App() {
           <Mobile />
           <GraphicDesigner />
           <Works />
-          <CV />
           <Contact />
         </main>
       </div>

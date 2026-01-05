@@ -177,24 +177,24 @@ export const Works = () => {
                   {/* Hover overlay with actions */}
                   <div className="absolute inset-0 bg-cyan-900/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     <div className="flex gap-4">
-                      <a
+                      {/* <a
                         href={project.link}
                         className="p-3 bg-black/50 rounded-full hover:bg-cyan-600/80 transition-colors duration-300"
                       >
                         <ExternalLink size={20} className="text-white" />
-                      </a>
-                      <a
+                      </a> */}
+                      {/* <a
                         href="#"
                         className="p-3 bg-black/50 rounded-full hover:bg-cyan-600/80 transition-colors duration-300"
                       >
                         <Eye size={20} className="text-white" />
-                      </a>
-                      <a
+                      </a> */}
+                      {/* <a
                         href="#"
                         className="p-3 bg-black/50 rounded-full hover:bg-cyan-600/80 transition-colors duration-300"
                       >
                         <Code size={20} className="text-white" />
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
@@ -219,14 +219,14 @@ export const Works = () => {
                   </div>
 
                   {/* View project button */}
-                  <div className="mt-6">
+                  {/* <div className="mt-6">
                     <a
                       href={project.link}
                       className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-white transition-colors duration-300"
                     >
                       View Project <ExternalLink size={14} />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>

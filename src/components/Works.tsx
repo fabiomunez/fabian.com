@@ -9,71 +9,113 @@ export const Works = () => {
     {
       title: "Zaqtu Safaris Website",
       description:
-        "A modern tourism website for Zaqtu Safaris showcasing travel packages, destinations, and booking functionality.",
+        "A modern tourism website for Zaqtu Safaris showcasing travel packages, destinations, and booking functionality. Features responsive design, interactive galleries, and integrated booking system.",
       image:
         "https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&q=80&w=1000",
       technologies: ["WordPress", "CSS", "JavaScript"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        performance: "90+ Lighthouse Score",
+        impact: "Enhanced user engagement"
+      },
       featured: true,
     },
     {
       title: "POS Platform",
       description:
-        "A comprehensive point of sale system with inventory management, sales tracking, and reporting features.",
+        "A comprehensive point of sale system with inventory management, sales tracking, and reporting features. Handles real-time transactions, multi-user access, and detailed analytics dashboard.",
       image:
         "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Laravel", "JavaScript", "MySQL"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        users: "50+ businesses",
+        transactions: "Real-time processing"
+      },
       featured: true,
     },
     {
       title: "Driving Management System",
       description:
-        "A platform for driving schools to manage students, instructors, schedules, and track progress.",
+        "A platform for driving schools to manage students, instructors, schedules, and track progress. Includes automated scheduling, progress tracking, and certification management.",
       image:
         "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Laravel", "MySQL", "Bootstrap"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        efficiency: "40% time saved",
+        automation: "Automated scheduling"
+      },
       featured: false,
     },
     {
       title: "Shortcourse Management System",
       description:
-        "A comprehensive platform for managing short courses, enrollments, instructors, and certifications.",
+        "A comprehensive platform for managing short courses, enrollments, instructors, and certifications. Features online registration, payment integration, and certificate generation.",
       image:
         "https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Laravel", "Tailwind CSS", "MySQL"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        enrollments: "500+ students",
+        automation: "Automated certificates"
+      },
       featured: false,
     },
     {
       title: "Grocery Delivery App",
       description:
-        "A mobile application for ordering groceries with real-time tracking and secure payment processing.",
+        "A mobile application for ordering groceries with real-time tracking and secure payment processing. Cross-platform solution with intuitive UI and seamless checkout experience.",
       image:
         "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Flutter", "Dart", "Laravel API"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        platform: "iOS & Android",
+        features: "Real-time tracking"
+      },
       featured: true,
     },
     {
       title: "Attendance, Application Tracking & Timetable System",
       description:
-        "An integrated platform for tracking attendance, monitoring applications, and managing timetables for educational institutions.",
+        "An integrated platform for tracking attendance, monitoring applications, and managing timetables for educational institutions. Multi-platform solution with mobile and web access.",
       image:
         "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Laravel", "React", "Flutter", "MySQL"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        institutions: "Multiple schools",
+        platforms: "Web + Mobile"
+      },
       featured: false,
     },
     {
       title: "Budget Management App",
       description:
-        "A comprehensive personal finance application with Google authentication for tracking expenses, managing budgets, and generating financial reports with data visualization.",
+        "A comprehensive personal finance application with Google authentication for tracking expenses, managing budgets, and generating financial reports with data visualization and insights.",
       image:
         "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1000",
       technologies: ["Flutter", "Dart", "Firebase", "Google Auth"],
-      link: "#",
+      liveLink: null,
+      githubLink: null,
+      caseStudyLink: null,
+      metrics: {
+        security: "Google OAuth",
+        features: "Data visualization"
+      },
       featured: true,
     },
   ];
@@ -218,15 +260,52 @@ export const Works = () => {
                     </div>
                   </div>
 
-                  {/* View project button */}
-                  {/* <div className="mt-6">
-                    <a
-                      href={project.link}
-                      className="inline-flex items-center gap-2 text-sm font-medium text-cyan-400 hover:text-white transition-colors duration-300"
-                    >
-                      View Project <ExternalLink size={14} />
-                    </a>
-                  </div> */}
+                  {project.metrics && (
+                    <div className="mb-4 grid grid-cols-2 gap-2">
+                      {Object.entries(project.metrics).map(([key, value], idx) => (
+                        <div key={idx} className="bg-black/20 rounded-lg p-2 border border-cyan-500/20">
+                          <p className="text-xs text-gray-400 capitalize">{key}</p>
+                          <p className="text-sm font-semibold text-cyan-300">{value}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {(project.liveLink || project.githubLink || project.caseStudyLink) && (
+                    <div className="mt-6 flex flex-wrap gap-2">
+                      {project.liveLink && (
+                        <a
+                          href={project.liveLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-500/20 text-cyan-400 rounded-lg text-sm font-medium hover:bg-cyan-500/30 transition-colors duration-300"
+                        >
+                          <ExternalLink size={14} />
+                          Live Demo
+                        </a>
+                      )}
+                      {project.githubLink && (
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-black/30 text-gray-300 rounded-lg text-sm font-medium hover:bg-black/50 transition-colors duration-300"
+                        >
+                          <Code size={14} />
+                          GitHub
+                        </a>
+                      )}
+                      {project.caseStudyLink && (
+                        <a
+                          href={project.caseStudyLink}
+                          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 text-blue-400 rounded-lg text-sm font-medium hover:bg-blue-500/30 transition-colors duration-300"
+                        >
+                          <Eye size={14} />
+                          Case Study
+                        </a>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </motion.div>

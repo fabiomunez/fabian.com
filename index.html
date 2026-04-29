@@ -2,16 +2,124 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Experienced developer crafting innovative web solutions. Explore my portfolio showcasing full-stack development projects, technical expertise, and professional experience." />
-    <title>Fabian | Developer</title>
+    
+    <!-- Favicon Set -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    
+    <!-- Primary Meta Tags -->
+    <title>Fabian Munez | Fullstack Developer Portfolio - React, Laravel, Flutter Expert</title>
+    <meta name="title" content="Fabian Munez | Fullstack Developer Portfolio">
+    <meta name="description" content="Professional portfolio of Fabian Munez, a fullstack developer specializing in web and mobile app development with expertise in React, Laravel, Flutter, TypeScript, and modern web technologies. Based in Tanzania.">
+    <meta name="keywords" content="fullstack developer, web developer, mobile app developer, React developer, Laravel developer, Flutter developer, TypeScript, JavaScript, PHP, MySQL, API development, Tanzania developer, Zanzibar developer, frontend developer, backend developer, mobile development">
+    <meta name="author" content="Fabian Munez">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabian.com">
+    <meta property="og:title" content="Fabian Munez | Fullstack Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio of Fabian Munez, a fullstack developer specializing in web and mobile app development with expertise in React, Laravel, Flutter, and modern web technologies.">
+    <meta property="og:image" content="https://fabian.com/og-image.png">
+    <meta property="og:image:alt" content="Fabian Munez Portfolio Preview">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Fabian Munez Portfolio">
+    
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://fabian.com">
+    <meta property="twitter:title" content="Fabian Munez | Fullstack Developer Portfolio">
+    <meta property="twitter:description" content="Professional portfolio of Fabian Munez, fullstack developer specializing in React, Laravel, Flutter, and modern web technologies.">
+    <meta property="twitter:image" content="https://fabian.com/twitter-image.png">
+    <meta property="twitter:image:alt" content="Fabian Munez Portfolio Preview">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://fabian.com/">
+    
+    <!-- Theme Color for Browser UI -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-navbutton-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX', {
+        page_path: window.location.pathname,
+        anonymize_ip: true
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/index.tsx"></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabian Munez",
+        "url": "https://fabian.com/",
+        "image": "https://fabian.com/assets/fabio.jpg",
+        "jobTitle": "Fullstack Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Freelance"
+        },
+        "sameAs": [
+          "https://github.com/fabiomunez",
+          "https://www.linkedin.com/in/fabio-munez-272902353/"
+        ],
+        "description": "A fullstack developer specializing in web and mobile app development with expertise in React, Laravel, Flutter, TypeScript, JavaScript, API development, and modern web technologies.",
+        "knowsAbout": [
+          "React", "Laravel", "Flutter", "TypeScript", "JavaScript", "PHP", "MySQL",
+          "API Development", "Mobile Development", "Web Development", "Fullstack Development",
+          "Tailwind CSS", "Node.js", "Git", "Docker", "WordPress", "Bootstrap", "Dart", "Firebase"
+        ],
+        "email": "fabiomunez5@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Tanzania"
+        },
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Software Development"
+        }
+      }
+    </script>
+    
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Fabian Munez Portfolio",
+        "url": "https://fabian.com/",
+        "description": "Professional portfolio showcasing fullstack development projects and expertise",
+        "author": {
+          "@type": "Person",
+          "name": "Fabian Munez"
+        },
+        "inLanguage": "en-US"
+      }
+    </script>
   </body>
 </html>

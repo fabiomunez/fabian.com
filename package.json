@@ -1,8 +1,8 @@
 {
   "name": "fabian-munez-portfolio",
   "version": "1.0.0",
-  "description": "Professional portfolio website for Fabian Munez - Fullstack Developer specializing in React, Laravel, and Flutter",
-  "author": "Fabian Munez <fabiomunez5@gmail.com>",
+  "description": "Professional portfolio website for Fabian Prosper - Fullstack Developer specializing in React, Laravel, and Flutter",
+  "author": "Fabian Prosper <fabiomunez5@gmail.com>",
   "private": true,
   "type": "module",
   "scripts": {

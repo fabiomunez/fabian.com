@@ -48,7 +48,7 @@ export const FlutterStateManagement = () => {
           <div className="flex flex-wrap items-center gap-5 text-sm text-gray-500 border-b border-gray-200 pb-8">
             <span className="flex items-center gap-2">
               <User size={15} className="text-indigo-500" />
-              Fabian Munez
+              Fabian Prosper
             </span>
             <span className="flex items-center gap-2">
               <Calendar size={15} className="text-indigo-500" />

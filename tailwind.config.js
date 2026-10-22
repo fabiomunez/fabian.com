@@ -48,7 +48,8 @@ export default {
     },
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
-      mono: ['Menlo', 'Monaco', 'Courier New', 'monospace'],
+      display: ['"Space Grotesk"', 'Inter', 'sans-serif'],
+      mono: ['"JetBrains Mono"', 'Menlo', 'Monaco', 'Courier New', 'monospace'],
     },
   },
   plugins: [],

@@ -92,7 +92,7 @@ export const CV = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              <p>PDF Format • Last Updated: January 2026</p>
+              <p>PDF Format • Last Updated: October 2026</p>
             </motion.div>
           </motion.div>
         </div>
